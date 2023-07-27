@@ -30,8 +30,8 @@ dependencies = ["setup-stdlib", "build-css"]
 
 [tasks.build-css]
 category = "Build"
-command = "npx"
-args = ["tailwindcss", "-i", "styles.css", "-o", "output.css", "--minify"]
+command = "tailwindcss"
+args = [ "-i", "styles.css", "-o", "output.css", "--minify"]
 
 [tasks.setup-stdlib]
 category = "Setup"

@@ -1,0 +1,5 @@
+[toolchain]
+channel = "stable"
+components = [ "cargo", "clippy", "rustfmt", "rustc-dev" ]
+targets = [ "wasm32-unknown-unknown" ]
+profile = "complete"
