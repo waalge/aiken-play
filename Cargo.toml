@@ -9,7 +9,7 @@ edition = "2021"
 aiken-lang = { version = "1.0.10-alpha" }
 uplc = { version = "1.0.10-alpha" }
 getrandom = { version = "0.2.9", features = ["js"] }
-indexmap = { version = "1.9.3", features = ["std"] }
+indexmap = "1.9.2"
 leptos = { version = "0.3.0", features = ["stable"] }
 leptos_icons = { version = "0.0.11", default-features = false, features = [
     "csr",
@@ -37,15 +37,6 @@ js-sys = "0.3.61"
 base64 = "0.21.0"
 brotli = "3.3.4"
 console_error_panic_hook = "0.1.7"
-
-
-
-# Dependencies of the `backtrace` crate
-addr2line = { version = "0.20.0", optional = true, default-features = false }
-rustc-demangle = { version = "0.1.21", features = ['rustc-dep-of-std'] }
-miniz_oxide = { version = "0.7.0", optional = true, default-features = false, public = false }
-
-
 
 [profile.release]
 codegen-units = 1
